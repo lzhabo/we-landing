@@ -1,5 +1,6 @@
 import styled from "@emotion/styled";
 import React from "react";
+import Header from "@components/Header";
 
 interface IProps {}
 
@@ -9,6 +10,10 @@ const Root = styled.div`
 `;
 
 const App: React.FC<IProps> = () => {
-  return <Root></Root>;
+  return (
+    <Root>
+      <Header></Header>
+    </Root>
+  );
 };
 export default App;
