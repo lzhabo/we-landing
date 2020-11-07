@@ -9,6 +9,6 @@ const Root = styled.div`
 `;
 
 const App: React.FC<IProps> = () => {
-  return <Root>hello</Root>;
-}
+  return <Root></Root>;
+};
 export default App;
