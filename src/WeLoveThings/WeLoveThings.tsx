@@ -27,9 +27,15 @@ const Text = styled.span`
   color: #6a7076;
 `;
 const Row = styled.div`
-  //width: 285px;
   height: 50px;
   padding: 0 37px 0 37px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 -4px;
+  & > * {
+  margin: 0 4px
+  }
 `;
 const WeLoveThings: React.FC<IProps> = () => {
   return (
