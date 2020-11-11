@@ -1,12 +1,11 @@
 import styled from "@emotion/styled";
 import React from "react";
-import Layout from "@components/Layout";
 import proLabel from "../../assets/pro-label.svg";
 import member from "../../assets/pro-member.svg";
 import phone from "../../assets/iphone2.svg";
-import button from "../../assets/button.svg";
 import { css } from "@emotion/core";
 import { FlexContainer } from "@components/FlexContaner";
+import Button from "@components/Button";
 
 interface IProps {}
 
@@ -63,22 +62,12 @@ const memberImgStyle = css`
 
   width: 90px;
   height: 85.91px;
-  left: 249px;
-  top: 561px;
-`;
-
-const StyledButton = styled.div`
-  padding: 10px 0px 0px 20px;
-
-  width: 315px;
-  height: 50px;
-  background-color: rgb(0 113 255);
 `;
 
 const ProPage: React.FC<IProps> = () => {
   return (
     <Root>
-      <FlexContainer>
+      <FlexContainer flexDirection={"column"} alignItems={"center"}>
         <Pro>Pro</Pro>
         <Title>
           Get even more exposure by going{" "}
@@ -88,7 +77,7 @@ const ProPage: React.FC<IProps> = () => {
           Especially for teams and professionals, we launched PRO. Add your logo
           for more brand exposure. Get tagged and cover more screen real estate!
         </Subtitle>
-        <StyledButton>See the difference</StyledButton>
+        <Button>See the difference</Button>
       </FlexContainer>
       <FlexContainer>
         {/*<img src={member} css={memberImgStyle} />*/}

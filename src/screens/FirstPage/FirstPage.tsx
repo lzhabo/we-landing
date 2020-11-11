@@ -5,7 +5,6 @@ import React from "react";
 import phone from "@src/assets/iphone.svg";
 import user from "@src/assets/user1.svg";
 import favorites from "@src/assets/favoriets.svg";
-import ellipse from "@src/assets/ellipse.svg";
 import { FlexContainer } from "@components/FlexContaner";
 
 interface IProps {}

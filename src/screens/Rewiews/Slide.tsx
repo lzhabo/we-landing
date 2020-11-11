@@ -1,7 +1,6 @@
 import styled from "@emotion/styled";
 import React from "react";
 import SizedBox from "@components/SizedBox";
-import { jsx } from "@emotion/core";
 
 interface IProps {
   description: string;
@@ -17,15 +16,11 @@ const Root = styled.div`
   //padding: 40px 0px 0px 40px;
   padding: 40px;
 
-  position: static;
-  width: 360px;
-  height: 490px;
-  left: 380px;
-  top: 0px;
-
+  width: 272px;
+  flex-shrink: 0;
+  box-sizing: border-box;
   background: #f3f5f6;
   border-radius: 20px;
-  margin: 10px;
 `;
 const Description = styled.div`
   font-family: Source Sans Pro;

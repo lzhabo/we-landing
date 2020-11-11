@@ -8,7 +8,7 @@ import submit from "../../assets/submit.svg";
 import { FlexContainer } from "@components/FlexContaner";
 import SizedBox from "@components/SizedBox";
 import { ReactComponent } from "*.svg";
-import SubmitButton from "@components/Header/SubmitButton";
+import SubmitButton from "@src/screens/Header/SubmitButton";
 
 interface IProps {}
 
