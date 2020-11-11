@@ -14,7 +14,8 @@ const Root = styled.div`
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding: 40px 0px 0px 40px;
+  //padding: 40px 0px 0px 40px;
+  padding: 40px;
 
   position: static;
   width: 360px;
@@ -24,6 +25,7 @@ const Root = styled.div`
 
   background: #f3f5f6;
   border-radius: 20px;
+  margin: 10px;
 `;
 const Description = styled.div`
   font-family: Source Sans Pro;
@@ -51,7 +53,7 @@ const Slide: React.FC<IProps> = ({ name, description, pic, country }) => {
   return (
     <Root>
       <Description>{description}</Description>
-      <SizedBox height={150} />
+      <SizedBox height={100} />
       <img src={pic} />
       <NameTitle>{name}</NameTitle>
       <Description>{country}</Description>

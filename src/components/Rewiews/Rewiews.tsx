@@ -41,7 +41,7 @@ const SubTitle = styled.div`
   padding-top: 60px;
 `;
 const ScrollContainer = styled.div`
-  overflow-y: auto;
+  overflow-x: auto;
 `;
 
 const Rewiews: React.FC<IProps> = () => {
