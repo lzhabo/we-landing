@@ -1,7 +1,6 @@
 import styled from "@emotion/styled";
 import React from "react";
 import SizedBox from "@components/SizedBox";
-import { jsx } from "@emotion/core";
 
 interface IProps {
   description: string;

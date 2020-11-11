@@ -1,10 +1,10 @@
 import styled from "@emotion/styled";
 import React from "react";
-import K180 from "../assets/180K.svg";
-import K447 from "../assets/447K.svg";
-import K539 from "../assets/539K.svg";
-import K708 from "../assets/708K.svg";
-import Tag from "@src/WeLoveThings/Tag";
+import K180 from "../../assets/180K.svg";
+import K447 from "../../assets/447K.svg";
+import K539 from "../../assets/539K.svg";
+import K708 from "../../assets/708K.svg";
+import Tag from "@src/screens/WeLoveThings/Tag";
 
 interface IProps {}
 
