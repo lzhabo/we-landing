@@ -4,6 +4,7 @@ import K180 from "../assets/180K.svg";
 import K447 from "../assets/447K.svg";
 import K539 from "../assets/539K.svg";
 import K708 from "../assets/708K.svg";
+import Tag from "@src/WeLoveThings/Tag";
 
 interface IProps {}
 
@@ -34,29 +35,33 @@ const Row = styled.div`
   justify-content: center;
   margin: 0 -4px;
   & > * {
-  margin: 0 4px
+    margin: 0 4px;
   }
 `;
+
 const WeLoveThings: React.FC<IProps> = () => {
   return (
     <Root>
       <Row>
         <Text>welovewebdesign</Text>
-        <img src={K708} />
+        <Tag color="#FF3F4C">708K</Tag>
       </Row>
       <Row>
         <Text>welovebranding</Text>
-        <img src={K539} />
+        <Tag color="#30B490">539K</Tag>
       </Row>
       <Row>
         <Text>weloveillustration</Text>
-        <img src={K447} />
+        <Tag color=": #F49229">447K</Tag>
       </Row>
       <Row>
         <Text>weloveanimations</Text>
-        <img src={K180} />
+        <Tag color="#5C52B5">180K</Tag>
       </Row>
     </Root>
   );
 };
+
+//Крошка картошка 💚
+
 export default WeLoveThings;

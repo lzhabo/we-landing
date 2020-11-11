@@ -11,7 +11,7 @@ const Root = styled.div`
   padding: 2px;
   cursor: pointer;
 `;
-const Text = styled.text`
+const Text = styled.div`
   font-family: Gilroy;
   font-style: normal;
   //font-weight: 600;
