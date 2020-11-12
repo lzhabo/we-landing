@@ -1,18 +1,18 @@
 import styled from "@emotion/styled";
 import React from "react";
-import Header from "@components/Header/Header";
-import WeLoveThings from "@components/WeLoveThings";
+import Header from "@src/screens/Header";
+import WeLoveThings from "@src/screens/WeLoveThings/WeLoveThings";
 import { injectGlobal } from "emotion";
 import gilroy from "../src/fonts/Gilroy-Regular.ttf";
 import gilroyBold from "../src/fonts/Gilroy-Bold.ttf";
 import gilroyMedium from "../src/fonts/Gilroy-Medium.ttf";
 import sourceSans from "../src/fonts/SourceSansPro-Regular.ttf";
 import sourceSansBold from "../src/fonts/SourceSansPro-Bold.ttf";
-import FirstPage from "@components/FirstPage";
-import SecondPage from "@components/SecondPage";
-import ThirdPage from "@components/ThirdPage";
-import ProPage from "@components/ProPage/ProPage";
-import Rewiews from "@components/Rewiews";
+import FirstPage from "@src/screens/FirstPage";
+import SecondPage from "@src/screens/SecondPage";
+import ThirdPage from "@src/screens/ThirdPage";
+import ProPage from "@src/screens/ProPage/ProPage";
+import Rewiews from "@src/screens/Rewiews";
 
 interface IProps {}
 
@@ -48,7 +48,6 @@ const Root = styled.div`
   display: flex;
   justify-content: center;
   font-family: Source Sans Pro;
-  height: 100vh;
 `;
 
 const Body = styled.div`
