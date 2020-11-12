@@ -8,7 +8,7 @@ import submit from "../../assets/submit.svg";
 import { FlexContainer } from "@components/FlexContaner";
 import SizedBox from "@components/SizedBox";
 import { ReactComponent } from "*.svg";
-import SubmitButton from "@src/screens/Header/SubmitButton";
+import SubmitButton from "@components/SubmitButton";
 
 interface IProps {}
 
@@ -22,7 +22,6 @@ const layoutStyle = css`
 const Root = styled.div`
   display: flex;
   border-bottom: 1px solid rgba(0, 0, 0, 0.15);
-  //min-height: 80px;
   height: 80px;
   flex-shrink: 0;
   justify-content: center;

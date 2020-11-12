@@ -1,6 +1,5 @@
 import styled from "@emotion/styled";
 import React from "react";
-import SizedBox from "@components/SizedBox";
 
 interface IProps {
   description: string;
@@ -13,8 +12,13 @@ const Root = styled.div`
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  //padding: 40px 0px 0px 40px;
   padding: 40px;
+
+  width: 272px;
+  height: 444px;
+
+  left: 380px;
+  top: 0px;
 
   width: 272px;
   flex-shrink: 0;
@@ -26,9 +30,8 @@ const Description = styled.div`
   font-family: Source Sans Pro;
   font-style: normal;
   font-weight: normal;
-  font-size: 18px;
+  font-size: 17px;
   line-height: 30px;
-  /* or 167% */
 
   color: #6a7076;
 `;
@@ -48,8 +51,7 @@ const Slide: React.FC<IProps> = ({ name, description, pic, country }) => {
   return (
     <Root>
       <Description>{description}</Description>
-      <SizedBox height={100} />
-      <img src={pic} />
+      <img src={pic} style={{ paddingBottom: 10 }} />
       <NameTitle>{name}</NameTitle>
       <Description>{country}</Description>
     </Root>

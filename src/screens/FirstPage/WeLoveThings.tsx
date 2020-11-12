@@ -1,10 +1,6 @@
 import styled from "@emotion/styled";
 import React from "react";
-import K180 from "../../assets/180K.svg";
-import K447 from "../../assets/447K.svg";
-import K539 from "../../assets/539K.svg";
-import K708 from "../../assets/708K.svg";
-import Tag from "@src/screens/WeLoveThings/Tag";
+import Tag from "@components/Tag";
 
 interface IProps {}
 
@@ -14,6 +10,7 @@ const Root = styled.div`
   border-bottom: 1px solid rgba(0, 0, 0, 0.15);
   flex-direction: column;
   align-items: center;
+  padding: 30px;
 `;
 
 const Text = styled.span`
@@ -52,7 +49,7 @@ const WeLoveThings: React.FC<IProps> = () => {
       </Row>
       <Row>
         <Text>weloveillustration</Text>
-        <Tag color=": #F49229">447K</Tag>
+        <Tag color="#F49229">447K</Tag>
       </Row>
       <Row>
         <Text>weloveanimations</Text>
@@ -61,7 +58,5 @@ const WeLoveThings: React.FC<IProps> = () => {
     </Root>
   );
 };
-
-//Крошка картошка 💚
 
 export default WeLoveThings;
