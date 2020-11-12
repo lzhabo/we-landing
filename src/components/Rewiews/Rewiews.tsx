@@ -49,7 +49,7 @@ const Rewiews: React.FC<IProps> = () => {
     <Root>
       <SubTitle>REVIEWS</SubTitle>
       <Title>Experience of creatives</Title>
-      <ScrollContainer>
+      <FlexContainer style={{ overflowY: "scroll" }}>
         <Slide
           description={
             "I use @weloveillistration to promote my illustrations since 2018 and im really happy with the impact. The majority of my clients have noticed my work via their instagram account. And that’s a perfect way to see others work and get inspired."
@@ -74,7 +74,7 @@ const Rewiews: React.FC<IProps> = () => {
           name={"Unifikat Design Studio"}
           country={"Brand Design Studio, Poland 🇵🇱"}
         />
-      </ScrollContainer>
+      </FlexContainer>
     </Root>
   );
 };
