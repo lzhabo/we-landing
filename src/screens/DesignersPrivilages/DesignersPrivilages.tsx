@@ -23,6 +23,8 @@ const contentContainerStyle = css`
   max-width: 315px;
 `;
 
+//todo love my little potato 💚
+
 const DesignersPrivilages: React.FC<IProps> = () => {
   return (
     <Root>
