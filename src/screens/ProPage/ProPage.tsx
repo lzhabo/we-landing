@@ -1,9 +1,10 @@
+/** @jsx jsx */
+import { jsx, css } from "@emotion/core";
 import styled from "@emotion/styled";
 import React from "react";
 import proLabel from "../../assets/pro-label.svg";
 import member from "../../assets/pro-member.svg";
 import phone from "../../assets/iphone2.svg";
-import { css, jsx } from "@emotion/core";
 import { FlexContainer } from "@components/FlexContaner";
 import Button from "@components/Button";
 import Title from "@components/Title";
@@ -19,22 +20,16 @@ const Root = styled.div`
   align-items: center;
 `;
 
-const Img = styled.img`
-  justify-content: center;
-  align-items: center;
-  align-content: center;
-`;
 const phoneImgStyle = css`
   width: 260px;
   height: auto;
-  z-index: -1;
 `;
 
 const memberImgStyle = css`
   position: absolute;
-  //left: calc(50% - 112px / 2 - 130px);
-
-  width: 112px;
+  width: 90px;
+  left: 249px;
+  top: 145px;
 `;
 const ProPage: React.FC<IProps> = () => {
   return (
@@ -48,7 +43,10 @@ const ProPage: React.FC<IProps> = () => {
         <Title
           style={{ color: "#ffffff", textAlign: "left", paddingBottom: "20px" }}
         >
-          Get even more exposure by going <Img src={proLabel} />
+          Get even more exposure by going&nbsp;
+          <span style={{ position: "relative" }}>
+            <img style={{ position: "absolute" }} src={proLabel} />
+          </span>
         </Title>
         <Subtitle
           style={{ color: "#abafb3", textAlign: "left", paddingBottom: "30px" }}
@@ -59,7 +57,7 @@ const ProPage: React.FC<IProps> = () => {
         <Button>See the difference</Button>
       </FlexContainer>
 
-      <FlexContainer alignItems={"center"}>
+      <FlexContainer justifyContent={"center"} style={{ position: "relative" }}>
         <img css={memberImgStyle} src={member} alt="user" />
         <img css={phoneImgStyle} src={phone} alt="phone" />
       </FlexContainer>
