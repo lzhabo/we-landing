@@ -15,25 +15,28 @@ const Root = styled.div`
   flex-direction: column;
   background: #e6e9ec;
   align-items: center;
+  padding-bottom: 60px;
 `;
 
 const contentContainerStyle = css`
   display: flex;
   max-width: 315px;
-  padding: 0 23px;
-  justify-content: start;
 `;
 
 //todo love my little potato 💚
 
-const ThirdPage: React.FC<IProps> = () => {
+const DesignersPrivilages: React.FC<IProps> = () => {
   return (
     <Root>
       <img src={phone} />
       <FlexContainer flexDirection={"column"} css={contentContainerStyle}>
-        <Subtitle2>Credits</Subtitle2>
-        <Title>All designs © of their respective owners</Title>
-        <Subtitle>
+        <Subtitle2 style={{ textAlign: "left", color: "#a9abac" }}>
+          Credits
+        </Subtitle2>
+        <Title style={{ textAlign: "left" }}>
+          All designs © of their respective owners
+        </Title>
+        <Subtitle style={{ textAlign: "left" }}>
           We at Welovedaily think it's important that it's about you, the
           designer. The appreciation must go to you, not to us.
         </Subtitle>
@@ -41,4 +44,4 @@ const ThirdPage: React.FC<IProps> = () => {
     </Root>
   );
 };
-export default ThirdPage;
+export default DesignersPrivilages;

@@ -6,14 +6,21 @@ interface IProps {
 }
 
 const Button = styled.div<IProps>`
-  padding: 20px 0;
-  width: 100%;
+  padding: 10px 20px;
+  width: 315px;
   background: ${({ backgroundColor }) => backgroundColor ?? "#0071ff"};
   color: ${({ color }) => color ?? "#fff"};
   border-radius: 7px;
   display: flex;
   align-items: center;
   justify-content: center;
+
+  font-family: Source Sans Pro;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 30px;
+  letter-spacing: 0.02em;
 `;
 
 export default Button;

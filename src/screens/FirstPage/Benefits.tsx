@@ -5,6 +5,7 @@ import like from "../../assets/like.svg";
 import member from "../../assets/member.svg";
 import Title from "@components/Title";
 import Subtitle from "@components/Subtitle";
+import Subtitle2 from "@components/Subtitle2";
 interface IProps {}
 
 const Root = styled.div`
@@ -13,27 +14,13 @@ const Root = styled.div`
   align-items: center;
   padding: 50px 0 50px 0;
 `;
-
-const Why = styled.div`
-  font-family: Gilroy;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 30px;
-
-  text-align: center;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-
-  color: rgba(41, 44, 48, 0.4);
-`;
 const Img = styled.img`
   padding-top: 30px;
 `;
 const Benefits: React.FC<IProps> = () => {
   return (
     <Root>
-      <Why>Why</Why>
+      <Subtitle2>Why</Subtitle2>
       <Title>The benefits of sharing</Title>
       <Img src={comment} />
       <Subtitle>
