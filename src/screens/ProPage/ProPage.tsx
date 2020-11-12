@@ -8,6 +8,7 @@ import { FlexContainer } from "@components/FlexContaner";
 import Button from "@components/Button";
 import Title from "@components/Title";
 import Subtitle from "@components/Subtitle";
+import Subtitle2 from "@components/Subtitle2";
 
 interface IProps {}
 
@@ -18,51 +19,49 @@ const Root = styled.div`
   align-items: center;
 `;
 
-const Pro = styled.div`
-  font-family: Gilroy;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 30px;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-
-  color: rgba(255, 255, 255, 0.66);
-  padding: 20px 23px 0 23px;
+const Img = styled.img`
+  justify-content: center;
+  align-items: center;
+  align-content: center;
 `;
 const phoneImgStyle = css`
   width: 260px;
   height: auto;
-`;
-const memberImgStyle = css`
-  width: 90px;
-  height: 85.91px;
+  z-index: -1;
 `;
 
+const memberImgStyle = css`
+  position: absolute;
+  //left: calc(50% - 112px / 2 - 130px);
+
+  width: 112px;
+`;
 const ProPage: React.FC<IProps> = () => {
   return (
     <Root>
-      <FlexContainer flexDirection={"column"} alignItems={"center"}>
-        {/*<FlexContainer flexDirection={"column"} css={contentContainerStyle}>*/}
-        <FlexContainer flexDirection={"column"}>
-          <Pro>Pro</Pro>
-          <Title style={{ color: "#ffffff" }}>
-            Get even more exposure by going{" "}
-            <img src={proLabel} style={{ alignItems: "center" }} />
-          </Title>
-          <Subtitle style={{ color: "#abafb3" }}>
-            Especially for teams and professionals, we launched PRO. Add your
-            logo for more brand exposure. Get tagged and cover more screen real
-            estate!
-          </Subtitle>
-        </FlexContainer>
+      <FlexContainer
+        flexDirection={"column"}
+        alignItems={"start"}
+        padding={"60px 23px 40px 23px"}
+      >
+        <Subtitle2 style={{ color: "#ffffff" }}>Pro</Subtitle2>
+        <Title
+          style={{ color: "#ffffff", textAlign: "left", paddingBottom: "20px" }}
+        >
+          Get even more exposure by going <Img src={proLabel} />
+        </Title>
+        <Subtitle
+          style={{ color: "#abafb3", textAlign: "left", paddingBottom: "30px" }}
+        >
+          Especially for teams and professionals, we launched PRO. Add your logo
+          for more brand exposure. Get tagged and cover more screen real estate!
+        </Subtitle>
         <Button>See the difference</Button>
       </FlexContainer>
-      <FlexContainer>
-        {/*<img src={member} css={memberImgStyle} />*/}
-        <img src={member} />
-        <img src={phone} />
-        {/*<img src={phone} css={phoneImgStyle} />*/}
+
+      <FlexContainer alignItems={"center"}>
+        <img css={memberImgStyle} src={member} alt="user" />
+        <img css={phoneImgStyle} src={phone} alt="phone" />
       </FlexContainer>
     </Root>
   );

@@ -11,7 +11,7 @@ const Subtitle2 = styled.div`
   letter-spacing: 2px;
   text-transform: uppercase;
 
-  color: rgba(255, 255, 255, 0.66);
+  color: rgba(41, 44, 48, 0.4);
 `;
 
 export default Subtitle2;

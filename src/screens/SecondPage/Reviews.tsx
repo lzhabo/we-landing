@@ -1,17 +1,19 @@
 import styled from "@emotion/styled";
 import React from "react";
-import Slide from "./Slide";
+import Slide from "@components/Slide";
 import carla from "../../assets/carla.svg";
 import rebombo from "../../assets/rebombo.svg";
 import unifikat from "../../assets/unifikat.svg";
-import Subtitle from "@components/Subtitle";
 import Title from "@components/Title";
+import Subtitle2 from "@components/Subtitle2";
 interface IProps {}
 
 const Root = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 70px 0 50px 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
 `;
 
 const ScrollContainer = styled.div`
@@ -56,8 +58,8 @@ const slidesData = [
 const Reviews: React.FC<IProps> = () => {
   return (
     <Root>
-      <Subtitle>REVIEWS</Subtitle>
-      <Title>Experience of creatives</Title>
+      <Subtitle2 style={{ color: "#a9abac" }}>REVIEWS</Subtitle2>
+      <Title style={{ paddingBottom: "30px" }}>Experience of creatives</Title>
       <ScrollContainer>
         {slidesData.map((slide, index) => (
           <Slide {...slide} key={index} />

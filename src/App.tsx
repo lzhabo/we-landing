@@ -6,10 +6,10 @@ import gilroyBold from "../src/fonts/Gilroy-Bold.ttf";
 import gilroyMedium from "../src/fonts/Gilroy-Medium.ttf";
 import sourceSans from "../src/fonts/SourceSansPro-Regular.ttf";
 import sourceSansBold from "../src/fonts/SourceSansPro-Bold.ttf";
-import ThirdPage from "@src/screens/ThirdPage";
 import ProPage from "@src/screens/ProPage/ProPage";
-import Reviews from "@src/screens/Reviews";
 import FirstPage from "@src/screens/FirstPage/FirstPage";
+import SecondPage from "@src/screens/SecondPage";
+import DesignersPrivilages from "@src/screens/DesignersPrivilages";
 
 interface IProps {}
 
@@ -57,9 +57,9 @@ const App: React.FC<IProps> = () => {
     <Root>
       <Body>
         <FirstPage />
-        <ThirdPage />
+        <DesignersPrivilages />
         <ProPage />
-        <Reviews />
+        <SecondPage />
       </Body>
     </Root>
   );
