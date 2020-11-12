@@ -24,6 +24,8 @@ const contentContainerStyle = css`
   justify-content: start;
 `;
 
+//todo love my little potato 💚
+
 const ThirdPage: React.FC<IProps> = () => {
   return (
     <Root>
