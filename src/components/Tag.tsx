@@ -18,6 +18,7 @@ const Root = styled.div<{ color: string }>`
   text-align: center;
   color: #ffffff;
   padding: 8px 12px;
+  border-radius: 10px;
 `;
 
 const Tag: React.FC<IProps> = ({ color, children }) => {

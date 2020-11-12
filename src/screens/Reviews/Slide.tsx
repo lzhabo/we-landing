@@ -1,6 +1,5 @@
 import styled from "@emotion/styled";
 import React from "react";
-import SizedBox from "@components/SizedBox";
 
 interface IProps {
   description: string;
@@ -13,22 +12,17 @@ const Root = styled.div`
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  //padding: 40px 0px 0px 40px;
   padding: 40px;
 
-<<<<<<< HEAD:src/components/Rewiews/Slide.tsx
-  position: static;
   width: 272px;
   height: 444px;
 
   left: 380px;
   top: 0px;
 
-=======
   width: 272px;
   flex-shrink: 0;
   box-sizing: border-box;
->>>>>>> 85e6e74038f2185a5e1c32ff9830290abb5b291a:src/screens/Rewiews/Slide.tsx
   background: #f3f5f6;
   border-radius: 20px;
 `;

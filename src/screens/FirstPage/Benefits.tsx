@@ -3,27 +3,17 @@ import React from "react";
 import comment from "../../assets/comment.svg";
 import like from "../../assets/like.svg";
 import member from "../../assets/member.svg";
-
+import Title from "@components/Title";
+import Subtitle from "@components/Subtitle";
 interface IProps {}
 
 const Root = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 50px 0 50px 0;
 `;
-const Title = styled.div`
-  font-family: Gilroy;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 26px;
-  line-height: 32px;
 
-  text-align: center;
-  font-feature-settings: "liga" off;
-
-  color: #292c30;
-  padding: 0 42px 0 42px;
-`;
 const Why = styled.div`
   font-family: Gilroy;
   font-style: normal;
@@ -37,38 +27,29 @@ const Why = styled.div`
 
   color: rgba(41, 44, 48, 0.4);
 `;
-
-const SubTitle = styled.div`
-  font-family: Source Sans Pro;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 18px;
-  line-height: 30px;
-
-  text-align: center;
-
-  color: #6a7076;
+const Img = styled.img`
+  padding-top: 30px;
 `;
-const SecondPage: React.FC<IProps> = () => {
+const Benefits: React.FC<IProps> = () => {
   return (
     <Root>
       <Why>Why</Why>
       <Title>The benefits of sharing</Title>
-      <img src={comment} />
-      <SubTitle>
+      <Img src={comment} />
+      <Subtitle>
         Share your work with designers <br />
          all over the world.
-      </SubTitle>
-      <img src={like} />
-      <SubTitle>
+      </Subtitle>
+      <Img src={like} />
+      <Subtitle>
         Inspire yourself and others <br /> with your designs.
-      </SubTitle>
-      <img src={member} />
-      <SubTitle>
+      </Subtitle>
+      <Img src={member} />
+      <Subtitle>
         Grow your follower base <br />
         and reach potential clients.
-      </SubTitle>
+      </Subtitle>
     </Root>
   );
 };
-export default SecondPage;
+export default Benefits;

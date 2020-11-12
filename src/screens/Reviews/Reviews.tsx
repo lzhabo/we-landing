@@ -4,7 +4,8 @@ import Slide from "./Slide";
 import carla from "../../assets/carla.svg";
 import rebombo from "../../assets/rebombo.svg";
 import unifikat from "../../assets/unifikat.svg";
-
+import Subtitle from "@components/Subtitle";
+import Title from "@components/Title";
 interface IProps {}
 
 const Root = styled.div`
@@ -13,32 +14,6 @@ const Root = styled.div`
   align-items: center;
 `;
 
-const Title = styled.div`
-  font-family: Gilroy;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 26px;
-  line-height: 32px;
-
-  text-align: center;
-  font-feature-settings: "liga" off;
-
-  color: #292c30;
-`;
-const SubTitle = styled.div`
-  font-family: Gilroy;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 30px;
-
-  text-align: center;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-
-  color: rgba(41, 44, 48, 0.4);
-  padding-top: 60px;
-`;
 const ScrollContainer = styled.div`
   overflow-x: auto;
   display: flex;
@@ -78,10 +53,10 @@ const slidesData = [
   },
 ];
 
-const Rewiews: React.FC<IProps> = () => {
+const Reviews: React.FC<IProps> = () => {
   return (
     <Root>
-      <SubTitle>REVIEWS</SubTitle>
+      <Subtitle>REVIEWS</Subtitle>
       <Title>Experience of creatives</Title>
       <ScrollContainer>
         {slidesData.map((slide, index) => (
@@ -91,4 +66,4 @@ const Rewiews: React.FC<IProps> = () => {
     </Root>
   );
 };
-export default Rewiews;
+export default Reviews;

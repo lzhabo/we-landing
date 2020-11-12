@@ -1,2 +1,2 @@
-import FirstPage from "./FirstPage";
-export default FirstPage;
+import ShareYourWork from "./ShareYourWork";
+export default ShareYourWork;
