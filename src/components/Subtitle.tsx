@@ -1,6 +1,8 @@
 import styled from "@emotion/styled";
 import React from "react";
 
+//todo love my little potato 💚
+
 const Subtitle = styled.div`
   font-family: Source Sans Pro;
   font-style: normal;

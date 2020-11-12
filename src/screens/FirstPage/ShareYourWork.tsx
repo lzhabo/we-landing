@@ -10,6 +10,8 @@ import Title from "@components/Title";
 import Subtitle from "@components/Subtitle";
 interface IProps {}
 
+//todo love my little potato 💚
+
 const Root = styled.div`
   display: flex;
   flex-direction: column;

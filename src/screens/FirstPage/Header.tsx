@@ -10,6 +10,8 @@ import SizedBox from "@components/SizedBox";
 import { ReactComponent } from "*.svg";
 import SubmitButton from "@components/SubmitButton";
 
+//todo love my little potato 💚
+
 interface IProps {}
 
 const layoutStyle = css`

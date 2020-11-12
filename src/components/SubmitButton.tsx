@@ -2,6 +2,8 @@ import styled from "@emotion/styled";
 import React from "react";
 import plus from "@src/assets/plus.svg";
 
+//todo love my little potato 💚
+
 interface IProps extends React.HTMLAttributes<HTMLDivElement> {}
 
 const Root = styled.div`

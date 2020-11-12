@@ -2,6 +2,8 @@ import styled from "@emotion/styled";
 import React from "react";
 import Tag from "@components/Tag";
 
+//todo love my little potato 💚
+
 interface IProps {}
 
 const Root = styled.div`

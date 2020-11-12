@@ -6,6 +6,8 @@ import Benefits from "@src/screens/FirstPage/Benefits";
 import ShareYourWork from "@src/screens/FirstPage/ShareYourWork";
 interface IProps {}
 
+//todo love my little potato 💚
+
 const Root = styled.div`
   display: flex;
   flex-direction: column;

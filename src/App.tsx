@@ -11,6 +11,8 @@ import FirstPage from "@src/screens/FirstPage/FirstPage";
 import SecondPage from "@src/screens/SecondPage";
 import DesignersPrivilages from "@src/screens/DesignersPrivilages";
 
+//todo love my little potato 💚
+
 interface IProps {}
 
 injectGlobal`

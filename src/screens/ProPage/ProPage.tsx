@@ -9,7 +9,7 @@ import Button from "@components/Button";
 import Title from "@components/Title";
 import Subtitle from "@components/Subtitle";
 import Subtitle2 from "@components/Subtitle2";
-
+//todo love my little potato 💚
 interface IProps {}
 
 const Root = styled.div`
