@@ -17,7 +17,6 @@ const Root = styled.div`
   padding: 24px;
   width: 272px;
 
-  width: 272px;
   flex-shrink: 0;
   box-sizing: border-box;
   background: #f3f5f6;
@@ -28,7 +27,7 @@ const Slide: React.FC<IProps> = ({ name, description, pic, country }) => {
   return (
     <Root>
       <Subtitle
-        style={{ fontSize: "17px", paddingBottom: "16px", textAlign: "left" }}
+        style={{ fontSize: "17px", paddingBottom: "56px", textAlign: "left" }}
       >
         {description}
       </Subtitle>
