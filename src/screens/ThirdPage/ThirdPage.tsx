@@ -23,6 +23,8 @@ const contentContainerStyle = css`
   padding: 0 23px;
 `;
 
+//todo love my little potato 💚
+
 const ThirdPage: React.FC<IProps> = () => {
   return (
     <Root>
