@@ -21,7 +21,6 @@ const contentContainerStyle = css`
   display: flex;
   max-width: 315px;
   padding: 0 23px;
-  justify-content: start;
 `;
 
 const ThirdPage: React.FC<IProps> = () => {
@@ -30,8 +29,10 @@ const ThirdPage: React.FC<IProps> = () => {
       <img src={phone} />
       <FlexContainer flexDirection={"column"} css={contentContainerStyle}>
         <Subtitle2>Credits</Subtitle2>
-        <Title>All designs © of their respective owners</Title>
-        <Subtitle>
+        <Title style={{ textAlign: "left" }}>
+          All designs © of their respective owners
+        </Title>
+        <Subtitle style={{ textAlign: "left" }}>
           We at Welovedaily think it's important that it's about you, the
           designer. The appreciation must go to you, not to us.
         </Subtitle>
