@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.js": "/we-landing/static/js/main.0799907d.chunk.js",
-    "main.js.map": "/we-landing/static/js/main.0799907d.chunk.js.map",
+    "main.js": "/we-landing/static/js/main.6caa543c.chunk.js",
+    "main.js.map": "/we-landing/static/js/main.6caa543c.chunk.js.map",
     "runtime-main.js": "/we-landing/static/js/runtime-main.6080599a.js",
     "runtime-main.js.map": "/we-landing/static/js/runtime-main.6080599a.js.map",
     "static/css/2.679831fc.chunk.css": "/we-landing/static/css/2.679831fc.chunk.css",
@@ -25,14 +25,18 @@
     "static/media/iphone-bottom.482d0716.svg": "/we-landing/static/media/iphone-bottom.482d0716.svg",
     "static/media/iphone.ba999a79.svg": "/we-landing/static/media/iphone.ba999a79.svg",
     "static/media/iphone2.e30463dc.svg": "/we-landing/static/media/iphone2.e30463dc.svg",
+    "static/media/koza2.3891a628.svg": "/we-landing/static/media/koza2.3891a628.svg",
     "static/media/like.78aca94d.svg": "/we-landing/static/media/like.78aca94d.svg",
     "static/media/logo.0088324d.svg": "/we-landing/static/media/logo.0088324d.svg",
     "static/media/member.148d7256.svg": "/we-landing/static/media/member.148d7256.svg",
     "static/media/menu.a44d9624.svg": "/we-landing/static/media/menu.a44d9624.svg",
+    "static/media/one-finger.35e82ac0.svg": "/we-landing/static/media/one-finger.35e82ac0.svg",
     "static/media/plus.3b7ac87d.svg": "/we-landing/static/media/plus.3b7ac87d.svg",
     "static/media/pro-label.19681c70.svg": "/we-landing/static/media/pro-label.19681c70.svg",
     "static/media/pro-member.5ea165ed.svg": "/we-landing/static/media/pro-member.5ea165ed.svg",
+    "static/media/pro.8b7f9dca.svg": "/we-landing/static/media/pro.8b7f9dca.svg",
     "static/media/rebombo.c457dd80.svg": "/we-landing/static/media/rebombo.c457dd80.svg",
+    "static/media/regular.eaa9689f.svg": "/we-landing/static/media/regular.eaa9689f.svg",
     "static/media/small-koza.16482238.svg": "/we-landing/static/media/small-koza.16482238.svg",
     "static/media/unifikat.2319359f.svg": "/we-landing/static/media/unifikat.2319359f.svg",
     "static/media/user1.182910d3.svg": "/we-landing/static/media/user1.182910d3.svg"
@@ -41,6 +45,6 @@
     "static/js/runtime-main.6080599a.js",
     "static/css/2.679831fc.chunk.css",
     "static/js/2.797ccd50.chunk.js",
-    "static/js/main.0799907d.chunk.js"
+    "static/js/main.6caa543c.chunk.js"
   ]
 }
