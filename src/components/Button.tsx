@@ -5,8 +5,6 @@ interface IProps {
   backgroundColor?: string;
 }
 
-//todo love my little potato 💚
-
 const Button = styled.div<IProps>`
   padding: 10px 20px;
   width: 315px;

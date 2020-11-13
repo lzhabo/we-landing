@@ -3,6 +3,8 @@ import React from "react";
 import Title from "@components/Title";
 import Subtitle2 from "@components/Subtitle2";
 import Subtitle from "@components/Subtitle";
+import BlackSlide from "@components/BlackSlide";
+import GoldSlide from "@components/GoldSlide";
 interface IProps {}
 
 const Root = styled.div`
@@ -22,10 +24,12 @@ const SubscriptionPlans: React.FC<IProps> = () => {
         Ready to share <br />
         your work?
       </Title>
-      <Subtitle style={{ fontSize: "17px", paddingTop: "20px" }}>
+      <Subtitle style={{ fontSize: "17px", padding: "20px 0 40px" }}>
         Submit your work now. But don’t worry, we will only send you a payment
         link when your work is selected (1-3 days).
       </Subtitle>
+      <BlackSlide />
+      <GoldSlide />
     </Root>
   );
 };

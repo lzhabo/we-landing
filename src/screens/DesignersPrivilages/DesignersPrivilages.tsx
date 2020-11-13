@@ -23,8 +23,6 @@ const contentContainerStyle = css`
   max-width: 315px;
 `;
 
-//todo love my little potato 💚
-
 const DesignersPrivilages: React.FC<IProps> = () => {
   return (
     <Root>
@@ -33,7 +31,7 @@ const DesignersPrivilages: React.FC<IProps> = () => {
         <Subtitle2 style={{ textAlign: "left", color: "#a9abac" }}>
           Credits
         </Subtitle2>
-        <Title style={{ textAlign: "left" }}>
+        <Title style={{ textAlign: "left", paddingBottom: "20px" }}>
           All designs © of their respective owners
         </Title>
         <Subtitle style={{ textAlign: "left" }}>
