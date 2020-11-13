@@ -15,7 +15,7 @@ const Root = styled.div`
   justify-content: center;
   align-items: center;
   box-sizing: border-box;
-  padding: 0 30px;
+  padding: 0 20px;
   border-top: 1px solid rgba(0, 0, 0, 0.15);
 `;
 const layoutStyle = css`
@@ -30,7 +30,7 @@ const Footer: React.FC<IProps> = () => {
     <Root>
       <FlexContainer css={layoutStyle} alignItems={"center"}>
         <FlexContainer alignItems={"center"}>
-          <Subtitle>© 2020 Welovedaily</Subtitle>
+          <Subtitle style={{ fontSize: "15px" }}>© 2020 Welovedaily</Subtitle>
         </FlexContainer>
         <img src={koza} />
         <FlexContainer justifyContent={"flex-end"}>

@@ -8,6 +8,7 @@ interface IProps {
 const Button = styled.div<IProps>`
   padding: 10px 20px;
   width: 315px;
+  height: 50px;
   background: ${({ backgroundColor }) => backgroundColor ?? "#0071ff"};
   color: ${({ color }) => color ?? "#fff"};
   border-radius: 7px;

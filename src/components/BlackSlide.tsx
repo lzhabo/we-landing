@@ -4,9 +4,6 @@ import regular from "../assets/regular.svg";
 import finger from "../assets/one-finger.svg";
 import Subtitle from "@components/Subtitle";
 import Button from "@components/Button";
-import Question from "@components/Question";
-import proLabel from "@src/assets/pro-label.svg";
-import { jsx } from "@emotion/core";
 
 interface IProps {}
 
@@ -60,7 +57,7 @@ const Subtitle2 = styled.div`
 const Img = styled.img`
   position: absolute;
   left: 0;
-  top: 112px;
+  top: 88px;
 `;
 const BlackSlide: React.FC<IProps> = () => {
   return (
@@ -74,12 +71,16 @@ const BlackSlide: React.FC<IProps> = () => {
         Share your work with the world.
       </Subtitle>
       <Subtitle2>YOU GET:</Subtitle2>
-      <Subtitle style={{ color: "#ffffff", opacity: "0.7" }}>
+      <Subtitle
+        style={{ color: "#ffffff", opacity: "0.7", paddingBottom: "20px" }}
+      >
         • Post on one of the 4 channels <br />
         • Full credits to the creator <br />
         • Pay after work is selected <br />
       </Subtitle>
-      <Button />
+      <Button style={{ width: "250px" }} backgroundColor={"#55595F"}>
+        Submit your work
+      </Button>
     </Root>
   );
 };

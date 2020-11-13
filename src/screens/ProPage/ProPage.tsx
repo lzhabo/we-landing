@@ -28,7 +28,7 @@ const phoneImgStyle = css`
 const memberImgStyle = css`
   position: absolute;
   width: 90px;
-  left: 249px;
+  left: 217px;
   top: 145px;
 `;
 const ProPage: React.FC<IProps> = () => {
@@ -57,10 +57,10 @@ const ProPage: React.FC<IProps> = () => {
         <Button>See the difference</Button>
       </FlexContainer>
 
-      <FlexContainer justifyContent={"center"} style={{ position: "relative" }}>
+      <div style={{ position: "relative" }}>
         <img css={memberImgStyle} src={member} alt="user" />
         <img css={phoneImgStyle} src={phone} alt="phone" />
-      </FlexContainer>
+      </div>
     </Root>
   );
 };

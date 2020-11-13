@@ -62,8 +62,8 @@ const Subtitle2 = styled.div`
 `;
 const Img = styled.img`
   position: absolute;
-  left: 213px;
-  top: 95px;
+  left: 206px;
+  top: 70px;
 `;
 const BlackSlide: React.FC<IProps> = () => {
   return (
@@ -77,12 +77,20 @@ const BlackSlide: React.FC<IProps> = () => {
         Perfect for teams and professionals.
       </Subtitle>
       <Subtitle2>Regular + extra’s:</Subtitle2>
-      <Subtitle style={{ color: "#ffffff", opacity: "0.7" }}>
+      <Subtitle
+        style={{ color: "#ffffff", opacity: "0.7", paddingBottom: "20px" }}
+      >
         + Tagged in post <br />
         + Branding included in post <br />
         + More screen real estate <br />
       </Subtitle>
-      <Button />
+      <Button
+        style={{ width: "250px" }}
+        backgroundColor="#FFFFFF"
+        color="#17191B"
+      >
+        Submit your work
+      </Button>
     </Root>
   );
 };
