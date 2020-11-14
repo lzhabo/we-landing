@@ -32,7 +32,7 @@ const Slide: React.FC<IProps> = ({ name, description, pic, country }) => {
         {description}
       </Subtitle>
 
-      <img src={pic} style={{ paddingBottom: 10 }} />
+      <img src={pic} style={{ paddingBottom: 10 }} alt="user" />
       <Title style={{ fontSize: "21px", lineHeight: "30px" }}>{name}</Title>
       <Subtitle>{country}</Subtitle>
     </Root>

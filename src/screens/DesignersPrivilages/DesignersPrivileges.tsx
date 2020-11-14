@@ -26,7 +26,7 @@ const contentContainerStyle = css`
 const DesignersPrivileges: React.FC<IProps> = () => {
   return (
     <Root>
-      <img src={phone} />
+      <img src={phone} alt="phone" />
       <FlexContainer flexDirection={"column"} css={contentContainerStyle}>
         <Subtitle2 style={{ textAlign: "left", color: "#a9abac" }}>
           Credits

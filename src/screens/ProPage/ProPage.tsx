@@ -5,7 +5,6 @@ import React from "react";
 import proLabel from "../../assets/pro-label.svg";
 import member from "../../assets/pro-member.svg";
 import phone from "../../assets/iphone2.svg";
-import { FlexContainer } from "@components/FlexContaner";
 import Button from "@components/Button";
 import Title from "@components/Title";
 import Subtitle from "@components/Subtitle";
@@ -49,7 +48,7 @@ const ProPage: React.FC<IProps> = () => {
         >
           Get even more exposure by going&nbsp;
           <span style={{ position: "relative" }}>
-            <img style={{ position: "absolute" }} src={proLabel} />
+            <img style={{ position: "absolute" }} src={proLabel} alt="pro" />
           </span>
         </Title>
         <Subtitle
