@@ -20,6 +20,14 @@ const Root = styled.div`
   align-items: center;
 `;
 
+const Body = styled.div`
+  display: flex;
+  flex-direction: column;
+  padding: 60px 23px 40px 23px;
+  max-width: 360px;
+  //todo add media query
+`;
+
 const phoneImgStyle = css`
   width: 260px;
   height: auto;
@@ -34,11 +42,7 @@ const memberImgStyle = css`
 const ProPage: React.FC<IProps> = () => {
   return (
     <Root>
-      <FlexContainer
-        flexDirection={"column"}
-        alignItems={"start"}
-        padding={"60px 23px 40px 23px"}
-      >
+      <Body>
         <Subtitle2 style={{ color: "#ffffff" }}>Pro</Subtitle2>
         <Title
           style={{ color: "#ffffff", textAlign: "left", paddingBottom: "20px" }}
@@ -55,9 +59,9 @@ const ProPage: React.FC<IProps> = () => {
           for more brand exposure. Get tagged and cover more screen real estate!
         </Subtitle>
         <Button>See the difference</Button>
-      </FlexContainer>
+      </Body>
 
-      <div style={{ position: "relative" }}>
+      <div style={{ position: "relative", marginBottom: -4 }}>
         <img css={memberImgStyle} src={member} alt="user" />
         <img css={phoneImgStyle} src={phone} alt="phone" />
       </div>

@@ -4,6 +4,7 @@ import regular from "../assets/regular.svg";
 import finger from "../assets/one-finger.svg";
 import Subtitle from "@components/Subtitle";
 import Button from "@components/Button";
+import Question from "@components/Question";
 
 interface IProps {}
 
@@ -63,7 +64,7 @@ const BlackSlide: React.FC<IProps> = () => {
   return (
     <Root>
       <Img src={finger} />
-      {/*<Question />*/}
+      <Question />
       <img src={regular} alt="regular" />
       <Price>15 EUR</Price>
       <Price2>or 18 USD</Price2>

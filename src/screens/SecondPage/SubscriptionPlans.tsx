@@ -24,7 +24,9 @@ const SubscriptionPlans: React.FC<IProps> = () => {
         Ready to share <br />
         your work?
       </Title>
-      <Subtitle style={{ fontSize: "17px", padding: "20px 0 40px" }}>
+      <Subtitle
+        style={{ fontSize: "17px", padding: "20px 0 40px", maxWidth: 360 }}
+      >
         Submit your work now. But don’t worry, we will only send you a payment
         link when your work is selected (1-3 days).
       </Subtitle>
