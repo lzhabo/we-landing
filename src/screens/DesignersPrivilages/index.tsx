@@ -1,2 +1,2 @@
-import DesignersPrivilages from "@src/screens/DesignersPrivilages/DesignersPrivilages";
-export default DesignersPrivilages;
+import DesignersPrivileges from "@src/screens/DesignersPrivilages/DesignersPrivileges";
+export default DesignersPrivileges;

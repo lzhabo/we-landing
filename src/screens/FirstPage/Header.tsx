@@ -10,8 +10,6 @@ import SizedBox from "@components/SizedBox";
 import { ReactComponent } from "*.svg";
 import SubmitButton from "@components/SubmitButton";
 
-//todo love my little potato 💚
-
 interface IProps {}
 
 const layoutStyle = css`
@@ -37,7 +35,7 @@ const Header: React.FC<IProps> = () => {
     <Root>
       <FlexContainer css={layoutStyle} alignItems={"center"}>
         <FlexContainer alignItems={"center"}>
-          <img src={menu} alt={"menu"} />
+          <img src={menu} alt={"menu"} style={{ cursor: "pointer" }} />
           <SizedBox width={25} />
           <img src={logo} alt={"logo"} />
         </FlexContainer>

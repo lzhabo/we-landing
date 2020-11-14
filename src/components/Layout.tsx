@@ -1,7 +1,5 @@
 import styled from "@emotion/styled";
 
-//todo love my little potato 💚
-
 const Layout = styled.div`
   display: flex;
   flex-direction: column;

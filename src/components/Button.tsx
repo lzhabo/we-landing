@@ -22,6 +22,7 @@ const Button = styled.div<IProps>`
   font-size: 15px;
   line-height: 30px;
   letter-spacing: 0.02em;
+  cursor: pointer;
 `;
 
 export default Button;

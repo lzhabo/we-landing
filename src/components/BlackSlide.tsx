@@ -63,7 +63,7 @@ const Img = styled.img`
 const BlackSlide: React.FC<IProps> = () => {
   return (
     <Root>
-      <Img src={finger} />
+      <Img src={finger} alt="pic" />
       <Question />
       <img src={regular} alt="regular" />
       <Price>15 EUR</Price>

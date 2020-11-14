@@ -1,7 +1,5 @@
 import React from "react";
 
-//todo love my little potato 💚
-
 const SizedBox: React.FunctionComponent<{
   width?: number;
   height?: number;
