@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.js": "/we-landing/static/js/main.6caa543c.chunk.js",
-    "main.js.map": "/we-landing/static/js/main.6caa543c.chunk.js.map",
+    "main.js": "/we-landing/static/js/main.c43d2506.chunk.js",
+    "main.js.map": "/we-landing/static/js/main.c43d2506.chunk.js.map",
     "runtime-main.js": "/we-landing/static/js/runtime-main.6080599a.js",
     "runtime-main.js.map": "/we-landing/static/js/runtime-main.6080599a.js.map",
     "static/css/2.679831fc.chunk.css": "/we-landing/static/css/2.679831fc.chunk.css",
@@ -35,6 +35,7 @@
     "static/media/pro-label.19681c70.svg": "/we-landing/static/media/pro-label.19681c70.svg",
     "static/media/pro-member.5ea165ed.svg": "/we-landing/static/media/pro-member.5ea165ed.svg",
     "static/media/pro.8b7f9dca.svg": "/we-landing/static/media/pro.8b7f9dca.svg",
+    "static/media/question.36c47a92.svg": "/we-landing/static/media/question.36c47a92.svg",
     "static/media/rebombo.c457dd80.svg": "/we-landing/static/media/rebombo.c457dd80.svg",
     "static/media/regular.eaa9689f.svg": "/we-landing/static/media/regular.eaa9689f.svg",
     "static/media/small-koza.16482238.svg": "/we-landing/static/media/small-koza.16482238.svg",
@@ -45,6 +46,6 @@
     "static/js/runtime-main.6080599a.js",
     "static/css/2.679831fc.chunk.css",
     "static/js/2.797ccd50.chunk.js",
-    "static/js/main.6caa543c.chunk.js"
+    "static/js/main.c43d2506.chunk.js"
   ]
 }
