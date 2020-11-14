@@ -1,8 +1,7 @@
 /** @jsx jsx */
-import { jsx, css } from "@emotion/core";
+import { jsx } from "@emotion/core";
 import styled from "@emotion/styled";
 import React from "react";
-import { FlexContainer } from "@components/FlexContaner";
 import SubmitButton from "@components/SubmitButton";
 import Subtitle from "@components/Subtitle";
 import koza from "../../assets/small-koza.svg";
@@ -26,21 +25,17 @@ const Body = styled.div`
   width: 100%;
   position: relative;
 `;
-
-const layoutStyle = css`
-  max-width: 360px;
-  @media (min-width: 1440px) {
-    max-width: 1400px;
-  } ;
-`;
-
 const Footer: React.FC<IProps> = () => {
   return (
     <Root>
       <Body>
         <Subtitle style={{ fontSize: "15px", position: "relative" }}>
           © 2020 Welovedaily
-          <img src={koza} style={{ position: "absolute", top: -66 }} />
+          <img
+            src={koza}
+            style={{ position: "absolute", top: -66 }}
+            alt="logo"
+          />
         </Subtitle>
         <SubmitButton
           style={{ position: "absolute", right: 0 }}

@@ -23,7 +23,7 @@ const contentContainerStyle = css`
   max-width: 315px;
 `;
 
-const DesignersPrivilages: React.FC<IProps> = () => {
+const DesignersPrivileges: React.FC<IProps> = () => {
   return (
     <Root>
       <img src={phone} />
@@ -42,4 +42,4 @@ const DesignersPrivilages: React.FC<IProps> = () => {
     </Root>
   );
 };
-export default DesignersPrivilages;
+export default DesignersPrivileges;

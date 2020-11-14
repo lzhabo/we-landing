@@ -1,11 +1,8 @@
 import styled from "@emotion/styled";
 import React from "react";
 import question from "../assets/question.svg";
-interface IProps {
-  backgroundColor?: string;
-}
 
-const Root = styled.div<IProps>`
+const Root = styled.div`
   display: flex;
   flex-direction: column;
   width: 20px;
@@ -16,12 +13,13 @@ const Root = styled.div<IProps>`
   align-items: center;
   justify-content: center;
   opacity: 70;
-  background: ${({ backgroundColor }) => backgroundColor ?? "#55595F"};
+  //background: rgba(41, 44, 48, 0.2);
+  background: #55595f;
   position: absolute;
   cursor: pointer;
 `;
 
-const Question: React.FC<IProps> = () => {
+const Question: React.FC = () => {
   return (
     <Root>
       <img style={{ paddingLeft: 1 }} src={question} alt="question" />

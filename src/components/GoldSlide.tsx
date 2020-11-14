@@ -68,7 +68,7 @@ const BlackSlide: React.FC<IProps> = () => {
   return (
     <Root>
       <Question />
-      <Img src={koza} />
+      <Img src={koza} alt="pic" />
       <img src={pro} alt="pro" />
       <Price>25 EUR</Price>
       <Price2>or 30 USD</Price2>
