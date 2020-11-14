@@ -19,7 +19,7 @@ const Root = styled.div`
   justify-content: center;
   @media (min-width: 1440px) {
     flex-direction: row;
-    height: 685px;
+    //height: 685px;
   } ;
 `;
 

@@ -10,6 +10,9 @@ const Subtitle = styled.div`
   text-align: center;
 
   color: #6a7076;
+  @media (min-width: 1440px) {
+    font-size: 18px;
+  } ;
 `;
 
 export default Subtitle;

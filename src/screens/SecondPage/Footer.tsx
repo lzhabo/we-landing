@@ -1,10 +1,11 @@
 /** @jsx jsx */
-import { jsx } from "@emotion/core";
+import { css, jsx } from "@emotion/core";
 import styled from "@emotion/styled";
 import React from "react";
 import SubmitButton from "@components/SubmitButton";
 import Subtitle from "@components/Subtitle";
 import koza from "../../assets/small-koza.svg";
+import { FlexContainer } from "@components/FlexContaner";
 
 interface IProps {}
 
@@ -24,12 +25,22 @@ const Body = styled.div`
   max-width: 360px;
   width: 100%;
   position: relative;
+  max-width: 360px;
+  @media (min-width: 1440px) {
+    max-width: 1400px;
+  } ;
 `;
 const Footer: React.FC<IProps> = () => {
   return (
     <Root>
       <Body>
-        <Subtitle style={{ fontSize: "15px", position: "relative" }}>
+        <Subtitle
+          style={{
+            fontSize: "15px",
+            position: "relative",
+            whiteSpace: "nowrap",
+          }}
+        >
           © 2020 Welovedaily
           <img
             src={koza}
@@ -37,10 +48,12 @@ const Footer: React.FC<IProps> = () => {
             alt="logo"
           />
         </Subtitle>
-        <SubmitButton
-          style={{ position: "absolute", right: 0 }}
-          onClick={() => alert("submit")}
-        />
+        <FlexContainer alignItems={"center"}>
+          <SubmitButton
+            style={{ position: "absolute", right: 0 }}
+            onClick={() => alert("submit")}
+          />
+        </FlexContainer>
       </Body>
     </Root>
   );
