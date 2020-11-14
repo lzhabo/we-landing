@@ -20,6 +20,11 @@ const Root = styled.div`
 
   background: linear-gradient(142.36deg, #d7b899 12.25%, #a87446 100%);
   margin: 10px;
+
+  @media (min-width: 1440px) {
+    width: 455px;
+    height: 590px;
+  }
 `;
 const Price = styled.div`
   font-family: Gilroy;
@@ -61,6 +66,10 @@ const Img = styled.img`
   position: absolute;
   left: 213px;
   top: 70px;
+
+  @media (min-width: 1440px) {
+    left: 353px;
+  }
 `;
 const BlackSlide: React.FC<IProps> = () => {
   return (

@@ -20,7 +20,7 @@ const Root = styled.div`
 const Benefit: React.FC<IProps> = ({ pic, description }) => {
   return (
     <Root>
-      <img src={pic} alt="pic" style={{ paddingTop: 30 }} />
+      <img src={pic} alt="pic" style={{ padding: "20px 0 5px" }} />
       <div style={{ padding: "10" }}>
         <Subtitle>{description}</Subtitle>
       </div>

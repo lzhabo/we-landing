@@ -26,15 +26,15 @@ const Wrap = styled.div`
 const benefitsData = [
   {
     pic: comment,
-    description: "Share your work with designers <br/>all over the world.",
+    description: `Share your work with designers all over the world.`,
   },
   {
     pic: like,
-    description: "Inspire yourself and others <br/> with your designs.",
+    description: `Inspire yourself and others with your designs.`,
   },
   {
     pic: member,
-    description: `Grow your follower base <br/> and reach potential clients.`,
+    description: `Grow your follower base and reach potential clients.`,
   },
 ];
 
