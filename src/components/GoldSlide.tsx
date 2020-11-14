@@ -13,10 +13,9 @@ interface IProps {}
 const Root = styled.div`
   display: flex;
   flex-direction: column;
-
   align-items: center;
   justify-content: center;
-  //width: 315px;
+  width: 315px;
   height: 555px;
   position: relative;
   border-radius: 20px;
@@ -62,14 +61,14 @@ const Subtitle2 = styled.div`
 `;
 const Img = styled.img`
   position: absolute;
-  left: 206px;
+  left: 213px;
   top: 70px;
 `;
 const BlackSlide: React.FC<IProps> = () => {
   return (
     <Root>
+      <Question />
       <Img src={koza} />
-      {/*<Question />*/}
       <img src={pro} alt="pro" />
       <Price>25 EUR</Price>
       <Price2>or 30 USD</Price2>
