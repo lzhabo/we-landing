@@ -5,8 +5,6 @@ import koza from "../assets/koza2.svg";
 import Subtitle from "@components/Subtitle";
 import Button from "@components/Button";
 import Question from "@components/Question";
-import proLabel from "@src/assets/pro-label.svg";
-import { jsx } from "@emotion/core";
 
 interface IProps {}
 

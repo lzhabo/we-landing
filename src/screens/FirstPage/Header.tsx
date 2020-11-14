@@ -4,10 +4,8 @@ import styled from "@emotion/styled";
 import React from "react";
 import logo from "../../assets/logo.svg";
 import menu from "../../assets/menu.svg";
-import submit from "../../assets/submit.svg";
 import { FlexContainer } from "@components/FlexContaner";
 import SizedBox from "@components/SizedBox";
-import { ReactComponent } from "*.svg";
 import SubmitButton from "@components/SubmitButton";
 
 interface IProps {}
