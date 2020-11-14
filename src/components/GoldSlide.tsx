@@ -19,7 +19,7 @@ const Root = styled.div`
   border-radius: 20px;
 
   background: linear-gradient(142.36deg, #d7b899 12.25%, #a87446 100%);
-  margin: 20px 0;
+  margin: 10px;
 `;
 const Price = styled.div`
   font-family: Gilroy;

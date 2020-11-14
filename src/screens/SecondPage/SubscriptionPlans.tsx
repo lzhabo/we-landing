@@ -15,7 +15,14 @@ const Root = styled.div`
   padding: 40px 0;
   border-bottom: 1px solid rgba(0, 0, 0, 0.15);
 `;
-
+const Wrap = styled.div`
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  @media (min-width: 1440px) {
+    flex-direction: column;
+  } ;
+`;
 const SubscriptionPlans: React.FC<IProps> = () => {
   return (
     <Root>
@@ -30,8 +37,10 @@ const SubscriptionPlans: React.FC<IProps> = () => {
         Submit your work now. But don’t worry, we will only send you a payment
         link when your work is selected (1-3 days).
       </Subtitle>
-      <BlackSlide />
-      <GoldSlide />
+      <Wrap>
+        <BlackSlide />
+        <GoldSlide />
+      </Wrap>
     </Root>
   );
 };

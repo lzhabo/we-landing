@@ -18,6 +18,7 @@ const Root = styled.div`
   height: 555px;
   position: relative;
   border-radius: 20px;
+  margin: 10px;
 `;
 const Price = styled.div`
   font-family: Gilroy;

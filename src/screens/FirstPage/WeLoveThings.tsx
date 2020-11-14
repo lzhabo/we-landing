@@ -12,7 +12,11 @@ const Root = styled.div`
   border-bottom: 1px solid rgba(0, 0, 0, 0.15);
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   padding: 30px;
+  @media (min-width: 1440px) {
+    flex-direction: row;
+  } ;
 `;
 
 const Text = styled.span`

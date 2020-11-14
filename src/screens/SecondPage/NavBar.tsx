@@ -29,6 +29,9 @@ const Body = styled.div`
   flex-direction: column;
   max-width: 360px;
   //todo add media query
+  @media (min-width: 1440px) {
+    max-width: 1400px;
+  } ;
 `;
 const Img = styled.img`
   padding: 20px 10px 50px 0;

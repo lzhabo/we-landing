@@ -6,11 +6,24 @@ import phone from "@src/assets/iphone.svg";
 import user from "@src/assets/user1.svg";
 import favorites from "@src/assets/favoriets.svg";
 import { FlexContainer } from "@components/FlexContaner";
-import Title from "@components/Title";
 import Subtitle from "@components/Subtitle";
 interface IProps {}
 
-//todo love my little potato 💚
+const Title = styled.div`
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 32px;
+  text-align: center;
+  font-feature-settings: "liga" off;
+  color: #292c30;
+
+  @media (min-width: 1440px) {
+    font-size: 58px;
+    line-height: 68px;
+  } ;
+`;
 
 const Root = styled.div`
   display: flex;
