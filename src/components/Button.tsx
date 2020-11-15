@@ -7,7 +7,7 @@ interface IProps {
 
 const Button = styled.div<IProps>`
   padding: 10px 20px;
-  width: 315px;
+  width: 395px;
   height: 50px;
   background: ${({ backgroundColor }) => backgroundColor ?? "#0071ff"};
   color: ${({ color }) => color ?? "#fff"};
@@ -23,6 +23,10 @@ const Button = styled.div<IProps>`
   line-height: 30px;
   letter-spacing: 0.02em;
   cursor: pointer;
+
+  @media (max-width: 1439px) {
+    width: 100%;
+  }
 `;
 
 export default Button;

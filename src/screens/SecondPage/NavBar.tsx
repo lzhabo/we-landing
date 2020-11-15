@@ -9,11 +9,11 @@ interface IProps {}
 const Root = styled.div`
   display: flex;
   flex-direction: column;
-  //padding: 50px 0 50px;
+  padding: 60px 0 60px;
   align-items: center;
   justify-content: center;
   @media (min-width: 1440px) {
-    //padding: 80px;
+    padding: 100px;
   }
 `;
 const Text = styled.div`
@@ -31,6 +31,7 @@ const Body = styled.div`
   display: flex;
   flex-direction: column;
   @media (min-width: 1440px) {
+    min-width: 900px;
     flex-direction: row;
     justify-content: space-between;
   } ;
@@ -61,7 +62,7 @@ const NavBar: React.FC<IProps> = () => {
   return (
     <Root>
       <Body>
-        <FlexContainer flexDirection={"column"}>
+        <FlexContainer style={{ minWidth: 315 }} flexDirection={"column"}>
           <Title style={{ textAlign: "left" }}>
             The biggest design <br />
             community on Instagram. <br />
@@ -72,7 +73,10 @@ const NavBar: React.FC<IProps> = () => {
             <img src={guy2} alt="designer" />
           </ImgWrap>
         </FlexContainer>
-        <FlexContainer justifyContent={"space-between"}>
+        <FlexContainer
+          justifyContent={"space-between"}
+          style={{ maxWidth: 400 }}
+        >
           <FlexContainer flexDirection={"column"}>
             <Text style={{ color: "#a9abac", cursor: "default" }}>SITEMAP</Text>
             <Text>Share your work</Text>
