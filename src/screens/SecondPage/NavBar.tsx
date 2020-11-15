@@ -1,6 +1,5 @@
 import styled from "@emotion/styled";
 import React from "react";
-//import Title from "@components/Title";
 import { FlexContainer } from "@components/FlexContaner";
 import guy1 from "../../assets/guy1.svg";
 import guy2 from "../../assets/guy2.svg";
@@ -10,9 +9,12 @@ interface IProps {}
 const Root = styled.div`
   display: flex;
   flex-direction: column;
-  padding: 50px 23px;
+  //padding: 50px 0 50px;
   align-items: center;
   justify-content: center;
+  @media (min-width: 1440px) {
+    //padding: 80px;
+  }
 `;
 const Text = styled.div`
   font-family: Gilroy;
@@ -28,15 +30,10 @@ const Text = styled.div`
 const Body = styled.div`
   display: flex;
   flex-direction: column;
-  //max-width: 360px;
-  //todo add media query
   @media (min-width: 1440px) {
     flex-direction: row;
     justify-content: space-between;
   } ;
-`;
-const Img = styled.img`
-  padding: 20px 10px 50px 0;
 `;
 const Title = styled.div`
   font-family: Gilroy;
@@ -53,22 +50,28 @@ const Title = styled.div`
     line-height: 30px;
   } ;
 `;
+const ImgWrap = styled.div`
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 30px 0 50px;
+`;
 
 const NavBar: React.FC<IProps> = () => {
   return (
     <Root>
       <Body>
-        <div>
+        <FlexContainer flexDirection={"column"}>
           <Title style={{ textAlign: "left" }}>
             The biggest design <br />
             community on Instagram. <br />
             By designers, for designers.
           </Title>
-          <div>
-            <Img src={guy1} alt="designer" />
-            <Img src={guy2} alt="designer" />
-          </div>
-        </div>
+          <ImgWrap>
+            <img src={guy1} alt="designer" style={{ paddingRight: 15 }} />
+            <img src={guy2} alt="designer" />
+          </ImgWrap>
+        </FlexContainer>
         <FlexContainer justifyContent={"space-between"}>
           <FlexContainer flexDirection={"column"}>
             <Text style={{ color: "#a9abac", cursor: "default" }}>SITEMAP</Text>

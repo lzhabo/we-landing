@@ -37,7 +37,6 @@ const benefitsData = [
     description: `Grow your follower base and reach potential clients.`,
   },
 ];
-
 const Benefits: React.FC<IProps> = () => {
   return (
     <Root>

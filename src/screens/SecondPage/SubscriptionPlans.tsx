@@ -1,10 +1,11 @@
+/** @jsx jsx */
 import styled from "@emotion/styled";
 import React from "react";
 import Title from "@components/Title";
 import Subtitle2 from "@components/Subtitle2";
-//import Subtitle from "@components/Subtitle";
 import BlackSlide from "@components/BlackSlide";
 import GoldSlide from "@components/GoldSlide";
+import { css, jsx } from "@emotion/core";
 interface IProps {}
 
 const Root = styled.div`
@@ -48,7 +49,14 @@ const SubscriptionPlans: React.FC<IProps> = () => {
     <Root>
       <Subtitle2>ARE YOU READY?</Subtitle2>
       <Title>
-        Ready to share <br />
+        Ready to share{" "}
+        <br
+          css={css`
+            @media (min-width: 1440px) {
+              display: none;
+            }
+          `}
+        />
         your work?
       </Title>
       <Subtitle>

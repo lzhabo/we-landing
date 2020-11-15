@@ -7,6 +7,7 @@ import user from "@src/assets/user1.svg";
 import favorites from "@src/assets/favoriets.svg";
 import { FlexContainer } from "@components/FlexContaner";
 import Subtitle from "@components/Subtitle";
+
 interface IProps {}
 
 const Title = styled.div`
@@ -72,7 +73,14 @@ const ShareYourWork: React.FC<IProps> = () => {
       </Title>
       <Subtitle style={{ paddingBottom: 100 }}>
         Get noticed by the biggest design
-        <br /> community on IG.
+        <br
+          css={css`
+            @media (min-width: 1440px) {
+              display: none;
+            }
+          `}
+        />
+        community on IG.
       </Subtitle>
       <FlexContainer
         justifyContent={"center"}

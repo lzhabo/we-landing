@@ -1,8 +1,6 @@
 import styled from "@emotion/styled";
 import React from "react";
-import Subtitle from "@components/Subtitle";
 import Title from "@components/Title";
-import { FlexContainer } from "@components/FlexContaner";
 
 interface IProps {
   description: string;
@@ -26,18 +24,26 @@ const Root = styled.div`
   @media (min-width: 1440px) {
     width: 360px;
     height: 490px;
+    padding: 40px;
+  } ;
+`;
+const Subtitle = styled.div`
+  font-family: Source Sans Pro;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 30px;
+  text-align: left;
+  color: #6a7076;
+  @media (min-width: 1440px) {
+    font-size: 18px;
   } ;
 `;
 
 const Slide: React.FC<IProps> = ({ name, description, pic, country }) => {
   return (
     <Root>
-      <Subtitle
-        style={{ fontSize: "17px", paddingBottom: "56px", textAlign: "left" }}
-      >
-        {description}
-      </Subtitle>
-
+      <Subtitle style={{ paddingBottom: 56 }}>{description}</Subtitle>
       <img src={pic} style={{ paddingBottom: 10 }} alt="user" />
       <Title style={{ fontSize: "21px", lineHeight: "30px" }}>{name}</Title>
       <Subtitle>{country}</Subtitle>

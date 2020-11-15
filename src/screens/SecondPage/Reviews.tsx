@@ -14,6 +14,9 @@ const Root = styled.div`
   align-items: center;
   padding: 70px 0 50px 0;
   border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+  @media (min-width: 1440px) {
+    padding: 130px 0 100px 0;
+  }
 `;
 
 const ScrollContainer = styled.div`

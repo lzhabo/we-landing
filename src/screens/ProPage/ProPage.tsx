@@ -19,7 +19,6 @@ const Root = styled.div`
   justify-content: center;
   @media (min-width: 1440px) {
     flex-direction: row;
-    //height: 685px;
   } ;
 `;
 
@@ -57,8 +56,10 @@ const Title = styled.div`
   @media (min-width: 1440px) {
     font-size: 36px;
     line-height: 42px;
+    padding: 10px 0 10px;
   } ;
 `;
+
 const ProPage: React.FC<IProps> = () => {
   return (
     <Root>
@@ -71,7 +72,11 @@ const ProPage: React.FC<IProps> = () => {
           </span>
         </Title>
         <Subtitle
-          style={{ color: "#abafb3", textAlign: "left", paddingBottom: "30px" }}
+          style={{
+            color: "#abafb3",
+            textAlign: "left",
+            padding: "30px 0 30px",
+          }}
         >
           Especially for teams and professionals, we launched PRO. Add your logo
           for more brand exposure. Get tagged and cover more screen real estate!
