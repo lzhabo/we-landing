@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.js": "/we-landing/static/js/main.c43d2506.chunk.js",
-    "main.js.map": "/we-landing/static/js/main.c43d2506.chunk.js.map",
+    "main.js": "/we-landing/static/js/main.d39c6811.chunk.js",
+    "main.js.map": "/we-landing/static/js/main.d39c6811.chunk.js.map",
     "runtime-main.js": "/we-landing/static/js/runtime-main.6080599a.js",
     "runtime-main.js.map": "/we-landing/static/js/runtime-main.6080599a.js.map",
     "static/css/2.679831fc.chunk.css": "/we-landing/static/css/2.679831fc.chunk.css",
-    "static/js/2.797ccd50.chunk.js": "/we-landing/static/js/2.797ccd50.chunk.js",
-    "static/js/2.797ccd50.chunk.js.map": "/we-landing/static/js/2.797ccd50.chunk.js.map",
+    "static/js/2.4fcb5caa.chunk.js": "/we-landing/static/js/2.4fcb5caa.chunk.js",
+    "static/js/2.4fcb5caa.chunk.js.map": "/we-landing/static/js/2.4fcb5caa.chunk.js.map",
     "static/js/3.46f68781.chunk.js": "/we-landing/static/js/3.46f68781.chunk.js",
     "static/js/3.46f68781.chunk.js.map": "/we-landing/static/js/3.46f68781.chunk.js.map",
     "index.html": "/we-landing/index.html",
     "static/css/2.679831fc.chunk.css.map": "/we-landing/static/css/2.679831fc.chunk.css.map",
-    "static/js/2.797ccd50.chunk.js.LICENSE.txt": "/we-landing/static/js/2.797ccd50.chunk.js.LICENSE.txt",
+    "static/js/2.4fcb5caa.chunk.js.LICENSE.txt": "/we-landing/static/js/2.4fcb5caa.chunk.js.LICENSE.txt",
     "static/media/Gilroy-Bold.bf181b07.ttf": "/we-landing/static/media/Gilroy-Bold.bf181b07.ttf",
     "static/media/Gilroy-Medium.473641e6.ttf": "/we-landing/static/media/Gilroy-Medium.473641e6.ttf",
     "static/media/Gilroy-Regular.319e0b95.ttf": "/we-landing/static/media/Gilroy-Regular.319e0b95.ttf",
@@ -45,7 +45,7 @@
   "entrypoints": [
     "static/js/runtime-main.6080599a.js",
     "static/css/2.679831fc.chunk.css",
-    "static/js/2.797ccd50.chunk.js",
-    "static/js/main.c43d2506.chunk.js"
+    "static/js/2.4fcb5caa.chunk.js",
+    "static/js/main.d39c6811.chunk.js"
   ]
 }
