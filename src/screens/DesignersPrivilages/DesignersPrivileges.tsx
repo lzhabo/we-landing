@@ -15,12 +15,19 @@ const Root = styled.div`
   flex-direction: column;
   background: #e6e9ec;
   align-items: center;
+  justify-content: center;
   padding-bottom: 60px;
+  @media (min-width: 1440px) {
+    flex-direction: row;
+  } ;
 `;
 
 const contentContainerStyle = css`
   display: flex;
   max-width: 315px;
+  @media (min-width: 1440px) {
+    max-width: 390px;
+  } ;
 `;
 
 const DesignersPrivileges: React.FC<IProps> = () => {

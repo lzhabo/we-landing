@@ -18,6 +18,12 @@ const Root = styled.div`
   height: 555px;
   position: relative;
   border-radius: 20px;
+  margin: 10px;
+
+  @media (min-width: 1440px) {
+    width: 455px;
+    height: 590px;
+  }
 `;
 const Price = styled.div`
   font-family: Gilroy;
