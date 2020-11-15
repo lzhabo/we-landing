@@ -1,3 +1,5 @@
+/** @jsx jsx */
+import { jsx, css } from "@emotion/core";
 import styled from "@emotion/styled";
 import React from "react";
 import regular from "../assets/regular.svg";
@@ -85,7 +87,15 @@ const BlackSlide: React.FC<IProps> = () => {
         • Full credits to the creator <br />
         • Pay after work is selected <br />
       </Subtitle>
-      <Button style={{ width: "250px" }} backgroundColor={"#55595F"}>
+      <Button
+        style={{ width: "250px" }}
+        backgroundColor={"#55595F"}
+        css={css`
+          @media (min-width: 1440px) {
+            width: 395px;
+          }
+        `}
+      >
         Submit your work
       </Button>
     </Root>
