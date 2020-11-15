@@ -90,13 +90,11 @@ const BlackSlide: React.FC<IProps> = () => {
         + Branding included in post <br />
         + More screen real estate <br />
       </Subtitle>
-      <Button
-        style={{ width: "250px" }}
-        backgroundColor="#FFFFFF"
-        color="#17191B"
-      >
-        Submit your work
-      </Button>
+      <div style={{ padding: "0 30px 0 30px" }}>
+        <Button backgroundColor={"#FFFFFF"} color={"#17191B"}>
+          Submit your work
+        </Button>
+      </div>
     </Root>
   );
 };

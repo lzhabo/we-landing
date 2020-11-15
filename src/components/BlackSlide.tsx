@@ -87,17 +87,9 @@ const BlackSlide: React.FC<IProps> = () => {
         • Full credits to the creator <br />
         • Pay after work is selected <br />
       </Subtitle>
-      <Button
-        style={{ width: "250px" }}
-        backgroundColor={"#55595F"}
-        css={css`
-          @media (min-width: 1440px) {
-            width: 395px;
-          }
-        `}
-      >
-        Submit your work
-      </Button>
+      <div style={{ padding: "0 30px 0 30px" }}>
+        <Button backgroundColor={"#55595F"}>Submit your work</Button>
+      </div>
     </Root>
   );
 };
