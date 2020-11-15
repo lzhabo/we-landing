@@ -14,6 +14,9 @@ const Root = styled.div`
   flex-direction: column;
   align-items: center;
   padding: 50px 0 50px 0;
+  @media (min-width: 1440px) {
+    padding: 100px;
+  } ;
 `;
 
 const Wrap = styled.div`
@@ -26,15 +29,15 @@ const Wrap = styled.div`
 const benefitsData = [
   {
     pic: comment,
-    description: `Share your work with designers all over the world.`,
+    description: "Share your work with designers \n all over the world.",
   },
   {
     pic: like,
-    description: `Inspire yourself and others with your designs.`,
+    description: "Inspire yourself and others \n with your designs.",
   },
   {
     pic: member,
-    description: `Grow your follower base and reach potential clients.`,
+    description: "Grow your follower base and \n reach potential clients.",
   },
 ];
 const Benefits: React.FC<IProps> = () => {

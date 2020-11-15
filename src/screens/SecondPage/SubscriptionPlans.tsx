@@ -6,6 +6,7 @@ import Subtitle2 from "@components/Subtitle2";
 import BlackSlide from "@components/BlackSlide";
 import GoldSlide from "@components/GoldSlide";
 import { css, jsx } from "@emotion/core";
+
 interface IProps {}
 
 const Root = styled.div`
@@ -61,7 +62,7 @@ const SubscriptionPlans: React.FC<IProps> = () => {
       </Title>
       <Subtitle>
         Submit your work now. But don’t worry, we will only send you a payment
-        link when your work is selected (1-3 days).
+        link when your work is selected (1-3 days).
       </Subtitle>
       <Wrap>
         <BlackSlide />

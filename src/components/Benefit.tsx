@@ -1,8 +1,6 @@
 import styled from "@emotion/styled";
 import React from "react";
-import member from "@src/assets/member.svg";
 import Subtitle from "@components/Subtitle";
-
 interface IProps {
   pic: string;
   description: string;
@@ -21,7 +19,7 @@ const Benefit: React.FC<IProps> = ({ pic, description }) => {
   return (
     <Root>
       <img src={pic} alt="pic" style={{ padding: "20px 0 5px" }} />
-      <div style={{ padding: "10" }}>
+      <div style={{ padding: "10", whiteSpace: "pre-wrap" }}>
         <Subtitle>{description}</Subtitle>
       </div>
     </Root>
