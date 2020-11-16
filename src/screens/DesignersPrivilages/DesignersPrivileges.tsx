@@ -36,7 +36,8 @@ const PhoneImg = styled.div`
 const Wrap = styled.div`
   display: flex;
   flex-direction: column;
-  max-width: 315px;
+  padding: 0 23px;
+  max-width: 360px;
   @media (min-width: 1440px) {
     max-width: 390px;
   } ;

@@ -13,7 +13,7 @@ const Root = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 30px;
+  padding: 30px 20px;
   @media (min-width: 1440px) {
     flex-direction: row;
   } ;

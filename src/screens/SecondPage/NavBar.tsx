@@ -9,7 +9,7 @@ interface IProps {}
 const Root = styled.div`
   display: flex;
   flex-direction: column;
-  padding: 60px 0 60px;
+  padding: 60px 23px;
   align-items: center;
   justify-content: center;
   @media (min-width: 1440px) {
@@ -62,7 +62,7 @@ const NavBar: React.FC<IProps> = () => {
   return (
     <Root>
       <Body>
-        <FlexContainer style={{ minWidth: 315 }} flexDirection={"column"}>
+        <FlexContainer flexDirection={"column"}>
           <Title style={{ textAlign: "left" }}>
             The biggest design <br />
             community on Instagram. <br />
