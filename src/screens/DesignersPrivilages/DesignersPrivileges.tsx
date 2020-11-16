@@ -23,7 +23,8 @@ const Root = styled.div`
 `;
 const PhoneImg = styled.div`
   background: url(${phone}) center no-repeat;
-  width: 400px;
+  width: 100vw;
+  max-width: 400px;
   height: 275px;
   @media (min-width: 1440px) {
     background: url(${phone2}) center no-repeat;
