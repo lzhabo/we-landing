@@ -8,6 +8,7 @@ import phone from "../../assets/iphone2.svg";
 import Button from "@components/Button";
 import Subtitle from "@components/Subtitle";
 import Subtitle2 from "@components/Subtitle2";
+import phone2 from "@src/assets/iphone2Big.svg";
 
 interface IProps {}
 
@@ -19,6 +20,7 @@ const Root = styled.div`
   justify-content: center;
   @media (min-width: 1440px) {
     flex-direction: row;
+    padding: 50px;
   } ;
 `;
 
@@ -27,12 +29,6 @@ const Body = styled.div`
   flex-direction: column;
   padding: 60px 23px 40px 23px;
   max-width: 360px;
-  //todo add media query
-`;
-
-const phoneImgStyle = css`
-  width: 260px;
-  height: auto;
 `;
 
 const memberImgStyle = css`
@@ -40,6 +36,10 @@ const memberImgStyle = css`
   width: 90px;
   left: 217px;
   top: 145px;
+  @media (min-width: 1440px) {
+    left: 340px;
+    top: 225px;
+  } ;
 `;
 const Title = styled.div`
   font-family: Gilroy;
@@ -59,7 +59,18 @@ const Title = styled.div`
     padding: 10px 0 10px;
   } ;
 `;
-
+const PhoneImg = styled.div`
+  background: url(${phone}) center no-repeat;
+  width: 260px;
+  height: 395px;
+  margin: -5px;
+  @media (min-width: 1440px) {
+    background: url(${phone2}) center no-repeat;
+    width: 483px;
+    height: 632px;
+    margin-bottom: -87px;
+  }
+`;
 const ProPage: React.FC<IProps> = () => {
   return (
     <Root>
@@ -86,7 +97,7 @@ const ProPage: React.FC<IProps> = () => {
 
       <div style={{ position: "relative", marginBottom: -4 }}>
         <img css={memberImgStyle} src={member} alt="user" />
-        <img css={phoneImgStyle} src={phone} alt="phone" />
+        <PhoneImg />
       </div>
     </Root>
   );
