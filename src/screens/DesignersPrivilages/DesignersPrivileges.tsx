@@ -33,7 +33,7 @@ const contentContainerStyle = css`
 const PhoneImg = styled.div`
   background: url(${phone}) center no-repeat;
   width: 400px;
-  height: 523.4px;
+  height: 463px;
   @media (min-width: 1440px) {
     background: url(${phone}) center no-repeat; //todo change picture
     width: 483px;
