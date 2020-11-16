@@ -2,7 +2,7 @@
 import { jsx, css } from "@emotion/core";
 import styled from "@emotion/styled";
 import React from "react";
-import phone from "../../assets/iphone-bottom.svg";
+import phone from "@src/assets/iphone-bottom.svg";
 import { FlexContainer } from "@components/FlexContaner";
 import Subtitle2 from "@components/Subtitle2";
 import Title from "@components/Title";
@@ -30,10 +30,21 @@ const contentContainerStyle = css`
   } ;
 `;
 
+const PhoneImg = styled.div`
+  background: url(${phone}) center no-repeat;
+  width: 400px;
+  height: 523.4px;
+  @media (min-width: 1440px) {
+    background: url(${phone}) center no-repeat; //todo change picture
+    width: 483px;
+    height: 632px;
+  } ;
+`;
+
 const DesignersPrivileges: React.FC<IProps> = () => {
   return (
     <Root>
-      <img src={phone} alt="phone" />
+      <PhoneImg />
       <FlexContainer flexDirection={"column"} css={contentContainerStyle}>
         <Subtitle2 style={{ textAlign: "left", color: "#a9abac" }}>
           Credits

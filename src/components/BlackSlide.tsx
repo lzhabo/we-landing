@@ -1,5 +1,3 @@
-/** @jsx jsx */
-import { jsx, css } from "@emotion/core";
 import styled from "@emotion/styled";
 import React from "react";
 import regular from "../assets/regular.svg";
