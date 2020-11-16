@@ -14,12 +14,13 @@ const Root = styled.div`
   background: #292c30;
   align-items: center;
   justify-content: center;
-  width: 315px;
+  width: 274px;
   height: 555px;
   position: relative;
   border-radius: 20px;
-  margin: 10px;
-
+  @media (min-width: 360px) {
+    width: 315px;
+  }
   @media (min-width: 1440px) {
     width: 455px;
     height: 590px;

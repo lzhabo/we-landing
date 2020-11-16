@@ -13,14 +13,15 @@ const Root = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 315px;
+  width: 274px;
   height: 555px;
   position: relative;
   border-radius: 20px;
 
   background: linear-gradient(142.36deg, #d7b899 12.25%, #a87446 100%);
-  margin: 10px;
-
+  @media (min-width: 360px) {
+    width: 315px;
+  }
   @media (min-width: 1440px) {
     width: 455px;
     height: 590px;
@@ -64,13 +65,10 @@ const Subtitle2 = styled.div`
 `;
 const Img = styled.img`
   position: absolute;
-  left: 213px;
+  right: 0;
   top: 70px;
-
-  @media (min-width: 1440px) {
-    left: 353px;
-  }
 `;
+
 const BlackSlide: React.FC<IProps> = () => {
   return (
     <Root>

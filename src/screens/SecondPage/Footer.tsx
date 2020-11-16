@@ -24,7 +24,6 @@ const Body = styled.div`
   max-width: 360px;
   width: 100%;
   position: relative;
-  max-width: 360px;
   @media (min-width: 1440px) {
     max-width: 1400px;
   } ;
@@ -53,6 +52,16 @@ const Subtitle = styled.div`
     width: 80000px;
   }
 `;
+
+const imageStyle = css`
+  position: absolute;
+  top: -66px;
+  right: -56px;
+  @media (min-width: 360px) {
+    right: unset;
+  }
+`;
+
 const Footer: React.FC<IProps> = () => {
   return (
     <Root>
@@ -60,11 +69,7 @@ const Footer: React.FC<IProps> = () => {
         <Subtitle>
           © 2020 Welovedaily &nbsp;
           <span css={HiddenText}>| Build in Rotterdam NL</span>
-          <img
-            src={koza}
-            style={{ position: "absolute", top: -66 }}
-            alt="logo"
-          />
+          <img src={koza} css={imageStyle} alt="logo" />
         </Subtitle>
         <FlexContainer alignItems={"center"}>
           <SubmitButton

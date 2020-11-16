@@ -18,6 +18,7 @@ const Root = styled.div`
   background: #292c30;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
   @media (min-width: 1440px) {
     flex-direction: row;
     padding: 50px;

@@ -14,7 +14,8 @@ const Root = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 40px 0;
+  padding: 40px 23px;
+  overflow: hidden;
   border-bottom: 1px solid rgba(0, 0, 0, 0.15);
   @media (min-width: 1440px) {
     padding: 100px;
@@ -24,8 +25,18 @@ const Wrap = styled.div`
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+
+  margin: -10px 0;
+  & > * {
+    margin: 10px 0;
+  }
+
   @media (min-width: 1440px) {
     flex-direction: row;
+    margin: 0 -15px;
+    & > * {
+      margin: 0 15px;
+    }
   } ;
 `;
 const Subtitle = styled.div`

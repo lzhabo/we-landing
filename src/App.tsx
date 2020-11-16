@@ -58,8 +58,8 @@ const App: React.FC<IProps> = () => {
       <Body>
         <FirstPage />
         <DesignersPrivileges />
-        {/*<ProPage />*/}
-        {/*<SecondPage />*/}
+        <ProPage />
+        <SecondPage />
       </Body>
     </Root>
   );
