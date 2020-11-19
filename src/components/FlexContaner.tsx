@@ -1,6 +1,5 @@
 import React from "react";
 
-//todo love my little potato 💚
 
 export interface IFlexContainerProps
   extends React.DetailedHTMLProps<
